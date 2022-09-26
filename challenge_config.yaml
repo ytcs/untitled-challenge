@@ -1,13 +1,13 @@
 # If you are not sure what all these fields mean, please refer our documentation here:
 # https://evalai.readthedocs.io/en/latest/configuration.html
-title: Random Number Generator Challenge
-short_description: Random number generation challenge for each submission
+title: 42 Challenge
+short_description: Challenge for generating 42
 description: templates/description.html
 evaluation_details: templates/evaluation_details.html
 terms_and_conditions: templates/terms_and_conditions.html
 image: logo.jpg
 submission_guidelines: templates/submission_guidelines.html
-leaderboard_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas a libero nec sagittis.
+leaderboard_description: Leaderboard
 evaluation_script: evaluation_script.zip
 remote_evaluation: True
 is_docker_based: True
@@ -19,16 +19,12 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
+        "labels": ["Metric1", "Total"],
         "default_order_by": "Total",
         "metadata": {
           "Metric1": {
             "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          "Metric2": {
-            "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description": "Whether the value is 42.",
           }
         }
       }
